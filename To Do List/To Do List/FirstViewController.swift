@@ -43,13 +43,18 @@ class FirstViewController: UIViewController, UITableViewDelegate{
         cell.textLabel?.text = toDoList[indexPath.row]
         return cell
     }
-    
+    //called when user "edits" item in the table
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
-        
-        if(editingStyle == UITableViewCellEditingStyle.Delete){
-        
+        //check for swipe to left: if editing style is equal to a delete
+        if (editingStyle == UITableViewCellEditingStyle.Delete){
+            
+            //updates the current array
             toDoList.removeAtIndex(indexPath.row)
+            
+            //updates the saved array
             NSUserDefaults.standardUserDefaults().setObject(toDoList, forKey: "toDoList")
+            
+            //update table
             toDoListTable.reloadData()
         }
     }
