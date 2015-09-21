@@ -13,10 +13,12 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var item: UITextField!
     
     @IBAction func addItem(sender: AnyObject) {
+        
         //add item to toDoList array
         toDoList.append(item.text)
-        
         item.text = ""
+        
+        NSUserDefaults.standardUserDefaults().setObject(toDoList, forKey: "toDoList")
     }
     
     override func viewDidLoad() {
@@ -30,12 +32,13 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     //tap outside of keyboard to close
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent)
-    {
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    
         self.view.endEditing(true)
     }
     //closes keyboard when return is pressed
     func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
         textField.resignFirstResponder()
         return true
     }
