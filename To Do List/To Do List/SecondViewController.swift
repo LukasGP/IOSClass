@@ -17,7 +17,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         //add item to toDoList array
         toDoList.append(item.text)
         item.text = ""
-        
+        //save the inputted field
         NSUserDefaults.standardUserDefaults().setObject(toDoList, forKey: "toDoList")
     }
     
