@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>3CC96EE4-3AD5-4C5B-A98F-4008FE51880C</string>
+	<string>84FE8E4B-1EBE-494C-B510-9A24B7C01EC1</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Web Content</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>48C9AAF2D88FEF54D72A86A67C56DA94367907D4</key>
 		<string>https://github.com/LukasGP/IOSClass.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Web Content/Web Content.xcodeproj</string>
+	<string>weatherApp/weatherApp.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>48C9AAF2D88FEF54D72A86A67C56DA94367907D4</key>
