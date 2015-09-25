@@ -13,6 +13,8 @@
 		885F19871BB37500000544A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885F19861BB37500000544A1 /* Images.xcassets */; };
 		885F198A1BB37500000544A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 885F19881BB37500000544A1 /* LaunchScreen.xib */; };
 		885F19961BB37500000544A1 /* weatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885F19951BB37500000544A1 /* weatherAppTests.swift */; };
+		889063F01BB4E9FA00038B3F /* beautiful-beauty-clouds-creation-god-light-favim-com-724381.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 889063EE1BB4E9FA00038B3F /* beautiful-beauty-clouds-creation-god-light-favim-com-724381.jpg */; };
+		889063F11BB4E9FA00038B3F /* sky-beautiful-scene-of-blue-clouds-wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 889063EF1BB4E9FA00038B3F /* sky-beautiful-scene-of-blue-clouds-wallpaper.jpg */; };
 		88CFF59F1BB4926300F6F8E6 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88CFF59E1BB4926300F6F8E6 /* background.jpg */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		885F198F1BB37500000544A1 /* weatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		885F19941BB37500000544A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		885F19951BB37500000544A1 /* weatherAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherAppTests.swift; sourceTree = "<group>"; };
+		889063EE1BB4E9FA00038B3F /* beautiful-beauty-clouds-creation-god-light-favim-com-724381.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "beautiful-beauty-clouds-creation-god-light-favim-com-724381.jpg"; sourceTree = "<group>"; };
+		889063EF1BB4E9FA00038B3F /* sky-beautiful-scene-of-blue-clouds-wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sky-beautiful-scene-of-blue-clouds-wallpaper.jpg"; sourceTree = "<group>"; };
 		88CFF59E1BB4926300F6F8E6 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +87,8 @@
 				885F19811BB37500000544A1 /* ViewController.swift */,
 				885F19831BB37500000544A1 /* Main.storyboard */,
 				88CFF59E1BB4926300F6F8E6 /* background.jpg */,
+				889063EE1BB4E9FA00038B3F /* beautiful-beauty-clouds-creation-god-light-favim-com-724381.jpg */,
+				889063EF1BB4E9FA00038B3F /* sky-beautiful-scene-of-blue-clouds-wallpaper.jpg */,
 				885F19861BB37500000544A1 /* Images.xcassets */,
 				885F19881BB37500000544A1 /* LaunchScreen.xib */,
 				885F197D1BB37500000544A1 /* Supporting Files */,
@@ -197,8 +203,10 @@
 			files = (
 				885F19851BB37500000544A1 /* Main.storyboard in Resources */,
 				88CFF59F1BB4926300F6F8E6 /* background.jpg in Resources */,
+				889063F11BB4E9FA00038B3F /* sky-beautiful-scene-of-blue-clouds-wallpaper.jpg in Resources */,
 				885F198A1BB37500000544A1 /* LaunchScreen.xib in Resources */,
 				885F19871BB37500000544A1 /* Images.xcassets in Resources */,
+				889063F01BB4E9FA00038B3F /* beautiful-beauty-clouds-creation-god-light-favim-com-724381.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
