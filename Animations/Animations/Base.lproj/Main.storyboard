@@ -20,8 +20,8 @@
                                 <rect key="frame" x="0.0" y="92" width="320" height="383"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUI-LQ-drw">
-                                <rect key="frame" x="112" y="483" width="97" height="30"/>
-                                <state key="normal" title="Update Image">
+                                <rect key="frame" x="112" y="483" width="71" height="30"/>
+                                <state key="normal" title="Start/Stop">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
