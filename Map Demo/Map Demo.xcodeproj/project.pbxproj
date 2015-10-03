@@ -13,6 +13,7 @@
 		885950D21BBCF3AF0068E1C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885950D11BBCF3AF0068E1C7 /* Images.xcassets */; };
 		885950D51BBCF3AF0068E1C7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 885950D31BBCF3AF0068E1C7 /* LaunchScreen.xib */; };
 		885950E11BBCF3AF0068E1C7 /* Map_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885950E01BBCF3AF0068E1C7 /* Map_DemoTests.swift */; };
+		88A7138A1BBF87B7007FD2CC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A713891BBF87B7007FD2CC /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		885950DA1BBCF3AF0068E1C7 /* Map DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Map DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		885950DF1BBCF3AF0068E1C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		885950E01BBCF3AF0068E1C7 /* Map_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map_DemoTests.swift; sourceTree = "<group>"; };
+		88A713891BBF87B7007FD2CC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88A7138A1BBF87B7007FD2CC /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		885950BC1BBCF3AE0068E1C7 = {
 			isa = PBXGroup;
 			children = (
+				88A713891BBF87B7007FD2CC /* CoreLocation.framework */,
 				885950C71BBCF3AE0068E1C7 /* Map Demo */,
 				885950DD1BBCF3AF0068E1C7 /* Map DemoTests */,
 				885950C61BBCF3AE0068E1C7 /* Products */,
@@ -409,6 +413,7 @@
 				885950E61BBCF3AF0068E1C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		885950E71BBCF3AF0068E1C7 /* Build configuration list for PBXNativeTarget "Map DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				885950E91BBCF3AF0068E1C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

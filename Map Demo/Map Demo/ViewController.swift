@@ -8,13 +8,26 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class ViewController: UIViewController, MKMapViewDelegate{
+class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate{
 
     @IBOutlet var map: MKMapView!
     
+    var locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //set the delegate to the viewcontroller
+        locationManager.delegate = self
+        //set the desired accuracy
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        //request authorization for when in use only
+        locationManager.requestWhenInUseAuthorization()
+        //update the users location
+        locationManager.startUpdatingLocation()
+        
         // Do any additional setup after loading the view, typically from a nib.
         
         //Configure the necessary information for displaying an area on the map
@@ -25,7 +38,7 @@ class ViewController: UIViewController, MKMapViewDelegate{
         var span: MKCoordinateSpan = MKCoordinateSpanMake(latDelta,lonDelta)
         var location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
         var region:MKCoordinateRegion = MKCoordinateRegionMake(location,span)
-        map.setRegion(region, animated: true)
+        map.setRegion(region, animated: false)
         
         //creates a pin with a title on a specific location 'location'
         var annotation = MKPointAnnotation()
@@ -57,6 +70,28 @@ class ViewController: UIViewController, MKMapViewDelegate{
         map.addAnnotation(annotation)
         
     }
+    
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        println(locations)
+        
+        var userLocation: CLLocation = locations[0] as! CLLocation
+        //pulling the latitude & longitude directly from userLocation
+        var latitude = userLocation.coordinate.latitude
+        
+        var longitude = userLocation.coordinate.longitude
+        
+        var course = userLocation.course
+        var altitude = userLocation.altitude
+        
+        var latDelta:CLLocationDegrees = 0.01
+        var lonDelta:CLLocationDegrees = 0.01
+        var span: MKCoordinateSpan = MKCoordinateSpanMake(latDelta,lonDelta)
+        var location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        var region:MKCoordinateRegion = MKCoordinateRegionMake(location,span)
+        self.map.setRegion(region, animated: false)
+    }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
