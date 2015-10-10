@@ -10,6 +10,7 @@ import UIKit
 
 var places = [Dictionary<String,String>()]
 
+
 class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
@@ -46,13 +47,15 @@ class TableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         
-        println("here")
-        println("\(places[indexPath.row])")
         cell.textLabel?.text = places[indexPath.row]["name"]
 
         return cell
     }
     
+    override func viewDidAppear(animated: Bool) {
+        
+        tableView.reloadData()
+    }
 
     /*
     // Override to support conditional editing of the table view.
