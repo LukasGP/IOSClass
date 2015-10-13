@@ -17,12 +17,40 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //configure map
         manager = CLLocationManager()
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
-        manager.requestWhenInUseAuthorization()
-        manager.startUpdatingLocation()
+        
+        if(activePlace == -1){
+            
+            manager.requestWhenInUseAuthorization()
+            manager.startUpdatingLocation()
+            
+        }else{
+            
+            let latitude = (places[activePlace]["lat"]! as NSString).doubleValue
+            let longitude = (places[activePlace]["long"]! as NSString).doubleValue
+            //setup the map
+            var coordinate = CLLocationCoordinate2DMake(latitude, longitude)
+            
+            var latDelta:CLLocationDegrees = 0.01
+            var lonDelta:CLLocationDegrees = 0.01
+            var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
+            var region:MKCoordinateRegion = MKCoordinateRegionMake(coordinate, span)
+            
+            
+            
+            self.map.setRegion(region, animated: true)
+            
+            //add annotation
+            var annotation = MKPointAnnotation()
+            annotation.coordinate = coordinate
+            annotation.title = places[activePlace]["name"]
+            self.map.addAnnotation(annotation)
+        }
+        
+        //configure map
+
         
         //configure long press colon is used to make sure necessary info is passed on to the action function
         var uilpgr = UILongPressGestureRecognizer(target: self, action: "action:")

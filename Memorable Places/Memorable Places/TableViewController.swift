@@ -10,6 +10,7 @@ import UIKit
 
 var places = [Dictionary<String,String>()]
 
+var activePlace = -1
 
 class TableViewController: UITableViewController {
 
@@ -57,6 +58,18 @@ class TableViewController: UITableViewController {
         tableView.reloadData()
     }
 
+    override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+        activePlace = indexPath.row
+        
+        return indexPath
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "newPlace"){
+            
+            activePlace = -1
+        }
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
