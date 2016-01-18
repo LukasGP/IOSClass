@@ -13,6 +13,7 @@
 		88BDA1B31C4CBB44003F7F12 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BDA1B21C4CBB44003F7F12 /* Images.xcassets */; };
 		88BDA1B61C4CBB44003F7F12 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88BDA1B41C4CBB44003F7F12 /* LaunchScreen.xib */; };
 		88BDA1C21C4CBB44003F7F12 /* AudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BDA1C11C4CBB44003F7F12 /* AudioTests.swift */; };
+		88BDA1CC1C4CBCAD003F7F12 /* billb+bachprelude.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88BDA1CB1C4CBCAD003F7F12 /* billb+bachprelude.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		88BDA1BB1C4CBB44003F7F12 /* AudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BDA1C01C4CBB44003F7F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88BDA1C11C4CBB44003F7F12 /* AudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTests.swift; sourceTree = "<group>"; };
+		88BDA1CB1C4CBCAD003F7F12 /* billb+bachprelude.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "billb+bachprelude.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				88BDA1AB1C4CBB44003F7F12 /* AppDelegate.swift */,
 				88BDA1AD1C4CBB44003F7F12 /* ViewController.swift */,
 				88BDA1AF1C4CBB44003F7F12 /* Main.storyboard */,
+				88BDA1CB1C4CBCAD003F7F12 /* billb+bachprelude.mp3 */,
 				88BDA1B21C4CBB44003F7F12 /* Images.xcassets */,
 				88BDA1B41C4CBB44003F7F12 /* LaunchScreen.xib */,
 				88BDA1A91C4CBB44003F7F12 /* Supporting Files */,
@@ -194,6 +197,7 @@
 			files = (
 				88BDA1B11C4CBB44003F7F12 /* Main.storyboard in Resources */,
 				88BDA1B61C4CBB44003F7F12 /* LaunchScreen.xib in Resources */,
+				88BDA1CC1C4CBCAD003F7F12 /* billb+bachprelude.mp3 in Resources */,
 				88BDA1B31C4CBB44003F7F12 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
