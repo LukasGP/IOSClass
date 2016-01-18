@@ -46,6 +46,7 @@ class ViewController: UIViewController {
         a11Text.enabled = false
         if(checkWinner()){
             disableButtons()
+            result.text = "player \(player) wins!!!"
         }
     }
     @IBAction func a12(sender: AnyObject) {
@@ -56,6 +57,7 @@ class ViewController: UIViewController {
         a12Text.enabled = false
         if(checkWinner()){
             disableButtons()
+            result.text = "player \(player) wins!!!"
         }
     }
     @IBAction func a13(sender: AnyObject) {
@@ -66,6 +68,7 @@ class ViewController: UIViewController {
         a13Text.enabled = false
         if(checkWinner()){
             disableButtons()
+            result.text = "player \(player) wins!!!"
         }
 
     }
@@ -77,6 +80,7 @@ class ViewController: UIViewController {
         a21Text.enabled = false
         if(checkWinner()){
             disableButtons()
+            result.text = "player \(player) wins!!!"
         }
     }
     @IBAction func a22(sender: AnyObject) {
@@ -87,6 +91,7 @@ class ViewController: UIViewController {
         a22Text.enabled = false
         if(checkWinner()){
             disableButtons()
+            result.text = "player \(player) wins!!!"
         }
     }
     @IBAction func a23(sender: AnyObject) {
@@ -97,6 +102,7 @@ class ViewController: UIViewController {
         a23Text.enabled = false
         if(checkWinner()){
             disableButtons()
+            result.text = "player \(player) wins!!!"
         }
     }
     @IBAction func a31(sender: AnyObject) {
@@ -107,6 +113,7 @@ class ViewController: UIViewController {
         a31Text.enabled = false
         if(checkWinner()){
             disableButtons()
+            result.text = "player \(player) wins!!!"
         }
     }
     @IBAction func a32(sender: AnyObject) {
@@ -117,6 +124,7 @@ class ViewController: UIViewController {
         a32Text.enabled = false
         if(checkWinner()){
             disableButtons()
+            result.text = "player \(player) wins!!!"
         }
     }
     @IBAction func a33(sender: AnyObject) {
@@ -127,6 +135,7 @@ class ViewController: UIViewController {
         a33Text.enabled = false
         if(checkWinner()){
             disableButtons()
+            result.text = "player \(player) wins!!!"
         }
     }
     
@@ -134,16 +143,25 @@ class ViewController: UIViewController {
         
         if(player == 1){
             boxText = "X"
-            player = 2
+            //player = 2
         }else{
                 boxText = "O"
-                player = 1
+                //player = 1
         }
-        updatePlayer()
+        
     }
     
-    func updatePlayer(){
+    func updatePlayerTag(){
         currentPlayer.text = "It's player "+String(player)+"'s turn"
+        
+    }
+    
+    func updateCurrentPlayer(){
+        if(player == 1){
+            player = 2
+        }else{
+            player = 1
+        }
     }
     
     func checkWinner() -> Bool{
@@ -155,44 +173,38 @@ class ViewController: UIViewController {
         }
         //Check top horizontal
         if(a11Test == boxText && a12Test == boxText && a13Test == boxText){
-            result.text = "\(winner)"
             return true
         }
         //Check Middle Horizontal
         if(a21Test == boxText && a22Test == boxText && a23Test == boxText){
-            result.text = "\(winner)"
             return true
         }
         //Check Bottom Horizontal
         if(a31Test == boxText && a32Test == boxText && a33Test == boxText){
-            result.text = "\(winner)"
             return true
         }
         //Check Left Vertical
         if(a11Test == boxText && a21Test == boxText && a31Test == boxText){
-            result.text = "\(winner)"
             return true
         }
         //Check Middle Vertical
         if(a12Test == boxText && a22Test == boxText && a32Test == boxText){
-            result.text = "\(winner)"
             return true
         }
         //Check Right Vertical
         if(a13Test == boxText && a23Test == boxText && a33Test == boxText){
-            result.text = "\(winner)"
             return true
         }
         //Check Positive Diagonal
         if(a31Test == boxText && a22Test == boxText && a13Test == boxText){
-            result.text = "\(winner)"
             return true
         }
         //Check Negative Diagonal
         if(a11Test == boxText && a22Test == boxText && a33Test == boxText){
-            result.text = "\(winner)"
             return true
         }
+        updateCurrentPlayer()
+        updatePlayerTag()
         return false
     }
     
@@ -211,7 +223,8 @@ class ViewController: UIViewController {
     
     @IBAction func newGame(sender: AnyObject) {
         player = 1
-        updatePlayer()
+        updatePlayerTag()
+        result.text = ""
         
         a11Text.enabled = true
         a11Test = ""
@@ -250,10 +263,12 @@ class ViewController: UIViewController {
         a33Text.setTitle("-", forState: .Normal)
         
     }
+    
+    //**Check for a draw & add a scoreboard
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        updatePlayer()
+        updatePlayerTag()
     }
 
     override func didReceiveMemoryWarning() {

@@ -13,6 +13,7 @@
 		888AAE021BC1D0A700C904DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 888AAE011BC1D0A700C904DF /* Images.xcassets */; };
 		888AAE051BC1D0A800C904DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 888AAE031BC1D0A800C904DF /* LaunchScreen.xib */; };
 		888AAE111BC1D0A800C904DF /* Advanced_SeguesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888AAE101BC1D0A800C904DF /* Advanced_SeguesTests.swift */; };
+		888AAE1B1BC1D1B800C904DF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888AAE1A1BC1D1B800C904DF /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		888AAE0A1BC1D0A800C904DF /* Advanced SeguesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Advanced SeguesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		888AAE0F1BC1D0A800C904DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		888AAE101BC1D0A800C904DF /* Advanced_SeguesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advanced_SeguesTests.swift; sourceTree = "<group>"; };
+		888AAE1A1BC1D1B800C904DF /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				888AADFA1BC1D0A700C904DF /* AppDelegate.swift */,
 				888AADFC1BC1D0A700C904DF /* ViewController.swift */,
+				888AAE1A1BC1D1B800C904DF /* TableViewController.swift */,
 				888AADFE1BC1D0A700C904DF /* Main.storyboard */,
 				888AAE011BC1D0A700C904DF /* Images.xcassets */,
 				888AAE031BC1D0A800C904DF /* LaunchScreen.xib */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				888AADFD1BC1D0A700C904DF /* ViewController.swift in Sources */,
+				888AAE1B1BC1D1B800C904DF /* TableViewController.swift in Sources */,
 				888AADFB1BC1D0A700C904DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
