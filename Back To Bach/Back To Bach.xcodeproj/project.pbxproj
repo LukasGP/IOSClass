@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88B1B5261C4DD1E800B22341 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1B5251C4DD1E800B22341 /* AppDelegate.swift */; };
+		88B1B5281C4DD1E800B22341 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1B5271C4DD1E800B22341 /* ViewController.swift */; };
+		88B1B52B1C4DD1E800B22341 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B1B5291C4DD1E800B22341 /* Main.storyboard */; };
+		88B1B52D1C4DD1E800B22341 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B1B52C1C4DD1E800B22341 /* Images.xcassets */; };
+		88B1B5301C4DD1E800B22341 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88B1B52E1C4DD1E800B22341 /* LaunchScreen.xib */; };
+		88B1B53C1C4DD1E800B22341 /* Back_To_BachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1B53B1C4DD1E800B22341 /* Back_To_BachTests.swift */; };
+		88B1B5461C4DD26400B22341 /* bach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88B1B5451C4DD26400B22341 /* bach.jpg */; };
+		88B1B5481C4DD27100B22341 /* bach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88B1B5471C4DD27100B22341 /* bach.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88B1B5361C4DD1E800B22341 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88B1B5181C4DD1E800B22341 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88B1B51F1C4DD1E800B22341;
+			remoteInfo = "Back To Bach";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88B1B5201C4DD1E800B22341 /* Back To Bach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Back To Bach.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88B1B5241C4DD1E800B22341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88B1B5251C4DD1E800B22341 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88B1B5271C4DD1E800B22341 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88B1B52A1C4DD1E800B22341 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88B1B52C1C4DD1E800B22341 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		88B1B52F1C4DD1E800B22341 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		88B1B5351C4DD1E800B22341 /* Back To BachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Back To BachTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88B1B53A1C4DD1E800B22341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88B1B53B1C4DD1E800B22341 /* Back_To_BachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Back_To_BachTests.swift; sourceTree = "<group>"; };
+		88B1B5451C4DD26400B22341 /* bach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bach.jpg; sourceTree = "<group>"; };
+		88B1B5471C4DD27100B22341 /* bach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bach.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88B1B51D1C4DD1E800B22341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B1B5321C4DD1E800B22341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88B1B5171C4DD1E800B22341 = {
+			isa = PBXGroup;
+			children = (
+				88B1B5221C4DD1E800B22341 /* Back To Bach */,
+				88B1B5381C4DD1E800B22341 /* Back To BachTests */,
+				88B1B5211C4DD1E800B22341 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88B1B5211C4DD1E800B22341 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88B1B5201C4DD1E800B22341 /* Back To Bach.app */,
+				88B1B5351C4DD1E800B22341 /* Back To BachTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88B1B5221C4DD1E800B22341 /* Back To Bach */ = {
+			isa = PBXGroup;
+			children = (
+				88B1B5251C4DD1E800B22341 /* AppDelegate.swift */,
+				88B1B5271C4DD1E800B22341 /* ViewController.swift */,
+				88B1B5451C4DD26400B22341 /* bach.jpg */,
+				88B1B5471C4DD27100B22341 /* bach.mp3 */,
+				88B1B5291C4DD1E800B22341 /* Main.storyboard */,
+				88B1B52C1C4DD1E800B22341 /* Images.xcassets */,
+				88B1B52E1C4DD1E800B22341 /* LaunchScreen.xib */,
+				88B1B5231C4DD1E800B22341 /* Supporting Files */,
+			);
+			path = "Back To Bach";
+			sourceTree = "<group>";
+		};
+		88B1B5231C4DD1E800B22341 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88B1B5241C4DD1E800B22341 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88B1B5381C4DD1E800B22341 /* Back To BachTests */ = {
+			isa = PBXGroup;
+			children = (
+				88B1B53B1C4DD1E800B22341 /* Back_To_BachTests.swift */,
+				88B1B5391C4DD1E800B22341 /* Supporting Files */,
+			);
+			path = "Back To BachTests";
+			sourceTree = "<group>";
+		};
+		88B1B5391C4DD1E800B22341 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88B1B53A1C4DD1E800B22341 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88B1B51F1C4DD1E800B22341 /* Back To Bach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88B1B53F1C4DD1E800B22341 /* Build configuration list for PBXNativeTarget "Back To Bach" */;
+			buildPhases = (
+				88B1B51C1C4DD1E800B22341 /* Sources */,
+				88B1B51D1C4DD1E800B22341 /* Frameworks */,
+				88B1B51E1C4DD1E800B22341 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Back To Bach";
+			productName = "Back To Bach";
+			productReference = 88B1B5201C4DD1E800B22341 /* Back To Bach.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88B1B5341C4DD1E800B22341 /* Back To BachTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88B1B5421C4DD1E800B22341 /* Build configuration list for PBXNativeTarget "Back To BachTests" */;
+			buildPhases = (
+				88B1B5311C4DD1E800B22341 /* Sources */,
+				88B1B5321C4DD1E800B22341 /* Frameworks */,
+				88B1B5331C4DD1E800B22341 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88B1B5371C4DD1E800B22341 /* PBXTargetDependency */,
+			);
+			name = "Back To BachTests";
+			productName = "Back To BachTests";
+			productReference = 88B1B5351C4DD1E800B22341 /* Back To BachTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88B1B5181C4DD1E800B22341 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = LukasGP;
+				TargetAttributes = {
+					88B1B51F1C4DD1E800B22341 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					88B1B5341C4DD1E800B22341 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 88B1B51F1C4DD1E800B22341;
+					};
+				};
+			};
+			buildConfigurationList = 88B1B51B1C4DD1E800B22341 /* Build configuration list for PBXProject "Back To Bach" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88B1B5171C4DD1E800B22341;
+			productRefGroup = 88B1B5211C4DD1E800B22341 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88B1B51F1C4DD1E800B22341 /* Back To Bach */,
+				88B1B5341C4DD1E800B22341 /* Back To BachTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88B1B51E1C4DD1E800B22341 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B1B52B1C4DD1E800B22341 /* Main.storyboard in Resources */,
+				88B1B5461C4DD26400B22341 /* bach.jpg in Resources */,
+				88B1B5481C4DD27100B22341 /* bach.mp3 in Resources */,
+				88B1B5301C4DD1E800B22341 /* LaunchScreen.xib in Resources */,
+				88B1B52D1C4DD1E800B22341 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B1B5331C4DD1E800B22341 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88B1B51C1C4DD1E800B22341 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B1B5281C4DD1E800B22341 /* ViewController.swift in Sources */,
+				88B1B5261C4DD1E800B22341 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B1B5311C4DD1E800B22341 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B1B53C1C4DD1E800B22341 /* Back_To_BachTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88B1B5371C4DD1E800B22341 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88B1B51F1C4DD1E800B22341 /* Back To Bach */;
+			targetProxy = 88B1B5361C4DD1E800B22341 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88B1B5291C4DD1E800B22341 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88B1B52A1C4DD1E800B22341 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88B1B52E1C4DD1E800B22341 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88B1B52F1C4DD1E800B22341 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88B1B53D1C4DD1E800B22341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88B1B53E1C4DD1E800B22341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88B1B5401C4DD1E800B22341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Back To Bach/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		88B1B5411C4DD1E800B22341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Back To Bach/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		88B1B5431C4DD1E800B22341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Back To BachTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Back To Bach.app/Back To Bach";
+			};
+			name = Debug;
+		};
+		88B1B5441C4DD1E800B22341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Back To BachTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Back To Bach.app/Back To Bach";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88B1B51B1C4DD1E800B22341 /* Build configuration list for PBXProject "Back To Bach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88B1B53D1C4DD1E800B22341 /* Debug */,
+				88B1B53E1C4DD1E800B22341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88B1B53F1C4DD1E800B22341 /* Build configuration list for PBXNativeTarget "Back To Bach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88B1B5401C4DD1E800B22341 /* Debug */,
+				88B1B5411C4DD1E800B22341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88B1B5421C4DD1E800B22341 /* Build configuration list for PBXNativeTarget "Back To BachTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88B1B5431C4DD1E800B22341 /* Debug */,
+				88B1B5441C4DD1E800B22341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88B1B5181C4DD1E800B22341 /* Project object */;
+}

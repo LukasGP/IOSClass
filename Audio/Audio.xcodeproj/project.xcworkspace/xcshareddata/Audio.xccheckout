@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>DE80B656-0583-446B-9CEB-C64555CF96B8</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Audio</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>48C9AAF2D88FEF54D72A86A67C56DA94367907D4</key>
 		<string>https://github.com/LukasGP/IOSClass.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Audio/Audio.xcodeproj/project.xcworkspace</string>
+	<string>Audio/Audio.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>48C9AAF2D88FEF54D72A86A67C56DA94367907D4</key>
