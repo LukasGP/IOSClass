@@ -20,19 +20,36 @@ class ViewController: UIViewController {
         
         var newUser = NSEntityDescription.insertNewObjectForEntityForName("Users", inManagedObjectContext: context) as! NSManagedObject
         //store data in the database and save it
-        newUser.setValue("Lukas", forKey: "username")
-        newUser.setValue("pass", forKey: "password")
+        //newUser.setValue("Dad", forKey: "username")
+        //newUser.setValue("pass4", forKey: "password")
         
         context.save(nil)
         
         //retrieve data from database
         var request = NSFetchRequest(entityName: "Users")
         request.returnsObjectsAsFaults = false
-        var results = context.executeFetchRequest(request, error: nil)
+        //Request a sepcific item from the database
+        request.predicate = NSPredicate(format: "username = %@", "Cait")
         
+        //Access the database
+        var results = context.executeFetchRequest(request, error: nil)
         if results?.count > 0{
+            
+            println(results)
             for result: AnyObject in results! {
-                println(result)
+                
+                if let user = result.valueForKey("username") as? String{
+                    // Check if user we're looking for. If so, delete their entry & save
+                    if user == "Cait" {
+                        //context.deleteObject(result as! NSManagedObject)
+                        //println(user + " has been deleted")
+                        
+                        //Update Cait's password after searching for her in the DB
+                        result.setValue("Caitrin", forKey: "password")
+                    }
+                }
+                
+                context.save(nil)
             }
         } else{
             println("No results")
