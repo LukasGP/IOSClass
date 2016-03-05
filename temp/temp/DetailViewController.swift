@@ -1,8 +1,8 @@
 //
 //  DetailViewController.swift
-//  Blog Reader
+//  temp
 //
-//  Created by Lukas Prusha on 2016-02-28.
+//  Created by Lukas Prusha on 2016-03-05.
 //  Copyright (c) 2016 LukasGP. All rights reserved.
 //
 
@@ -10,7 +10,9 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet var webview: UIWebView!
+    @IBOutlet weak var detailDescriptionLabel: UILabel!
+
+
     var detailItem: AnyObject? {
         didSet {
             // Update the view.
@@ -20,11 +22,9 @@ class DetailViewController: UIViewController {
 
     func configureView() {
         // Update the user interface for the detail item.
-        
-        if let detail: AnyObject = self.detailItem{
-            if let wv = self.webview{
-                
-                wv.loadHTMLString(detail.valueForKey("content")!.description, baseURL: nil)
+        if let detail: AnyObject = self.detailItem {
+            if let label = self.detailDescriptionLabel {
+                label.text = detail.valueForKey("timeStamp")!.description
             }
         }
     }
